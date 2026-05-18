@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Travel Mood Generator</title>
+    <title>AI Travel Mood Generator</title>
   </head>
   <body>
-    <h1>Welcome to the Travel Mood Generator</h1>
+    <head>
+      <h1>🌏 AI Travel Mood Generator</h1>
+    </head>
+    <main>
+      <form id="travel-form">
+        <input
+          type="text"
+          placeholder="Enter a destination or mood..."
+          autofocus
+          required
+          autocomplete="off"
+          id="user-input"
+        />
+        <input type="submit" value="Generate" />
+      </form>
+      <div id="result">✈️ Your travel mood will appear here...</div>
+    </main>
     <footer>
       This AI Travel Mood Generator was coded by
       <a href="https://github.com/melania7730" target="_blank">Melania</a> and
