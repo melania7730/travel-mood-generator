@@ -7,37 +7,46 @@
     <title>AI Travel Mood Generator</title>
   </head>
   <body>
-    <head>
-      <h1>🌏 AI Travel Mood Generator</h1>
-    </head>
-    <main>
-      <form id="travel-form">
-        <input
-          type="text"
-          placeholder="Enter a destination or mood..."
-          autofocus
-          required
-          autocomplete="off"
-          id="user-input"
-        />
-        <input type="submit" value="Generate" />
-      </form>
-      <div id="result">✈️ Your travel mood will appear here...</div>
-    </main>
-    <footer>
-      This AI Travel Mood Generator was coded by
-      <a href="https://github.com/melania7730" target="_blank">Melania</a> and
-      is open-sourced on
-      <a
-        href="https://github.com/melania7730/travel-mood-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a href="https://ai-travelmood-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <head>
+        <h1>🌏 AI Travel Mood Generator</h1>
+      </head>
+      <main>
+        <form id="travel-form">
+          <input
+            type="text"
+            placeholder="Enter a destination or mood..."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-input"
+          />
+          <input type="submit" value="Generate" class="submit-button" />
+        </form>
+        <div class="result" id="result">
+          🌴 Bali Escape
+          <br />
+          Golden sunsets, ocean breeze,
+          <br />
+          slow mornings and peaceful nights.
+        </div>
+      </main>
+      <footer>
+        This AI Travel Mood Generator was coded by
+        <a href="https://github.com/melania7730" target="_blank">Melania</a> and
+        is open-sourced on
+        <a
+          href="https://github.com/melania7730/travel-mood-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://ai-travelmood-generator.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
