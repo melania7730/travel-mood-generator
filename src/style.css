@@ -69,7 +69,11 @@ form {
 
   box-shadow: 0px 4px 30px rgba(39, 33, 66, 0.03);
 
-  font-size: 18px;
+  font-size: 17px;
+}
+
+.result strong {
+  color: #7b61ff;
 }
 
 footer {
