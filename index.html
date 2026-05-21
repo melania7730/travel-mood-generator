@@ -14,19 +14,24 @@
         <h1>🌏 AI Travel Mood Generator</h1>
       </head>
       <main>
-        <form id="travel-form">
-          <input
-            type="text"
-            placeholder="Enter a destination or mood..."
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-input"
-          />
-          <input type="submit" value="Generate" class="submit-button" />
-        </form>
-        <div class="result" id="result"></div>
+        <div class="form-container">
+          <form id="travel-form">
+            <input
+              type="text"
+              placeholder="Enter a destination or mood..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-input"
+            />
+
+            <input type="submit" value="Generate" class="submit-button" />
+          </form>
+
+          <div class="hint">i.e: Bali, Tokyo, Cozy Winter, Tropical Escape</div>
+        </div>
+        <div class="result hidden" id="result"></div>
       </main>
       <footer>
         This AI Travel Mood Generator was coded by

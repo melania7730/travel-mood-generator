@@ -25,15 +25,16 @@ h1 {
   color: #272044;
 }
 
-form {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  display: flex;
-  gap: 10px;
+.form-container {
+  background-color: white;
   margin-bottom: 30px;
-
+  border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 20px;
+}
+
+form {
+  display: flex;
 }
 
 .instructions {
@@ -45,6 +46,10 @@ form {
   line-height: 20px;
 }
 
+.instructions::placeholder {
+  color: #8b88a8;
+}
+
 .submit-button {
   background: #7b61ff;
   color: white;
@@ -53,11 +58,20 @@ form {
   padding: 14px 24px;
   font-size: 16px;
   width: 150px;
+  margin-left: 10px;
   cursor: pointer;
+  transition: background 200ms ease-in-out;
 }
 
 .submit-button:hover {
   background: #6246ea;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 8px;
+  opacity: 0.6;
+  font-size: 12px;
 }
 
 .result {
@@ -66,14 +80,26 @@ form {
   line-height: 1.8;
   border-left: 4px solid #7b61ff;
   border-radius: 10px;
-
   box-shadow: 0px 4px 30px rgba(39, 33, 66, 0.03);
-
   font-size: 17px;
 }
 
 .result strong {
   color: #7b61ff;
+}
+
+.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 footer {
